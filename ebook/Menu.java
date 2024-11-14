@@ -1,10 +1,19 @@
 package ebook;
 
 import java.util.Scanner;
-
+import ebook.model.Ebook;
 public class Menu {
 
 	public static void main(String[] args) {
+	
+		//Teste ebook
+		Ebook ebook = new Ebook (1,"A revolta dos que não foram", "Simone lays", 20.0f,10,"PDF", "Linkdownload");
+		ebook.visualizar();
+		ebook.tirar(5);
+		ebook.visualizar();
+		ebook.acrescentar(50);
+		ebook.visualizar();
+		
 
 		Scanner leia = new Scanner(System.in);
 
